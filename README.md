@@ -1,22 +1,24 @@
 # 📩 Optimized Spam Detection System
 
-A Machine Learning system for detecting whether an SMS message is **Spam** or **Ham (Legitimate)**.
+A Machine Learning-based SMS Spam Detection System designed to classify messages as either **Spam** or **Ham**.
 
-The project uses traditional Machine Learning techniques with **Scikit-learn** and provides a simple **Streamlit** web application for real-time predictions.
+The project implements a complete Machine Learning pipeline, starting from data preprocessing and feature extraction, through model training and evaluation, to optimization and deployment using **Streamlit**.
 
 ---
 
 ## 🎯 Project Objective
 
-The main objective is to build a reliable spam detection system by:
+The main goal of this project is to build an accurate and reliable system for detecting spam messages.
 
-- Preprocessing SMS messages.
-- Converting text into numerical features.
-- Training multiple Machine Learning classifiers.
-- Evaluating models using standard classification metrics.
-- Performing hyperparameter and feature tuning.
-- Selecting the best-performing model.
-- Deploying the final model using Streamlit.
+The project includes:
+
+- Data cleaning and preprocessing
+- Feature extraction using text vectorization techniques
+- Training multiple Machine Learning models
+- Comparing model performance using different evaluation metrics
+- Hyperparameter tuning and optimization
+- Selecting the best-performing model
+- Deploying the final model using Streamlit
 
 ---
 
@@ -26,150 +28,298 @@ The main objective is to build a reliable spam detection system by:
 - Pandas
 - NumPy
 - Scikit-learn
-- Joblib
 - Matplotlib
 - Seaborn
+- Joblib
 - Streamlit
 - Git & GitHub
 
 ---
 
-## 📊 Dataset
-
-The project uses an SMS spam dataset containing two main classes:
-
-- **Ham** — Legitimate messages.
-- **Spam** — Unwanted or fraudulent messages.
-
-The cleaned dataset is stored in:
+## 🔄 Project Workflow
 
 ```text
-data/cleaned_spam.csv
-🤖 Machine Learning Models
-
-Several traditional Machine Learning approaches were evaluated using:
-
-Feature Extraction
-CountVectorizer
-TF-IDF Vectorizer
-Classifiers
-Multinomial Naive Bayes
-Logistic Regression
-LinearSVC
-
-The models were compared using:
-
-Accuracy
-Precision
-Recall
-F1-Score
-Confusion Matrix
-⚙️ Optimization
-
-Hyperparameter and feature tuning were performed using training data only.
-
-The experiments included:
-
-MultinomialNB alpha
-CountVectorizer ngram_range
-min_df
-max_df
-LinearSVC C
-LinearSVC class_weight
-
-The tuning experiments did not outperform the original best-performing configuration on the held-out test set, so the original configuration was retained as the final model.
-
-🏆 Final Model
-
-The selected final model is:
-
-CountVectorizer + Multinomial Naive Bayes
-
-with:
-
-alpha = 0.5
-Final Test Performance
-Metric	Score
-Accuracy	98.84%
-Precision	97.60%
-Recall	93.13%
-F1-Score	95.31%
-Confusion Matrix
-[[900, 3],
- [  9, 122]]
-
-The final evaluation was performed on an untouched test set to provide an honest estimate of model performance.
-
-🌐 Streamlit Application
-
-The project includes a Streamlit web application that allows users to enter an SMS message and receive:
-
-Spam/Ham prediction
-Prediction confidence
-Ham probability
-Spam probability
-Final model performance metrics
-🚀 How to Run
-1. Clone the repository
-git clone https://github.com/MariamMohamed06/Optimized_Spam_Detection_System.git
-2. Navigate to the project directory
-cd Optimized_Spam_Detection_System
-3. Install dependencies
-pip install -r requirements.txt
-4. Run the Streamlit application
-python -m streamlit run app.py
-
-The application will open in your browser.
-
-📁 Project Structure
-Optimized_Spam_Detection_System/
-│
-├── data/
-│   ├── cleaned_spam.csv
-│   └── spam.csv
-│
-├── models/
-│   ├── final_count_vectorizer.pkl
-│   ├── final_spam_model.pkl
-│   ├── count_vectorizer.pkl
-│   ├── countvectorizer_linearsvc.pkl
-│   ├── countvectorizer_logisticregression.pkl
-│   ├── countvectorizer_multinomialnb.pkl
-│   ├── tf_idf_linearsvc.pkl
-│   ├── tf_idf_logisticregression.pkl
-│   ├── tf_idf_multinomialnb.pkl
-│   └── tfidf_vectorizer.pkl
-│
-├── notebooks/
-│   ├── Data Preprocessing.ipynb
-│   ├── Models.ipynb
-│   ├── Evaluation.ipynb
-│   ├── Optimization.ipynb
-│   └── evaluate.py
-│
-├── outputs/
-│   ├── confusion_matrices.png
-│   ├── f1_ranking.png
-│   ├── metrics_comparison.png
-│   ├── misclassified_examples.csv
-│   └── model_comparison_results.csv
-│
-├── app.py
-├── requirements.txt
-└── README.md
-👥 Project Workflow
-
-The project workflow consists of:
-
-Data Collection & Preprocessing
-Feature Extraction
+SMS Dataset
+    │
+    ▼
+Data Preprocessing
+    │
+    ▼
+Feature Engineering
+    │
+    ├── CountVectorizer
+    └── TF-IDF Vectorizer
+    │
+    ▼
 Model Training
+    │
+    ├── Multinomial Naive Bayes
+    ├── Logistic Regression
+    └── LinearSVC
+    │
+    ▼
 Model Evaluation
-Hyperparameter & Feature Optimization
+    │
+    ▼
+Optimization
+    │
+    ▼
 Final Model Selection
+    │
+    ▼
 Streamlit Deployment
-📌 Conclusion
+```
 
-The final system achieved an F1-Score of 95.31% and 98.84% accuracy on the held-out test set.
+---
 
-The project demonstrates a complete traditional Machine Learning pipeline for SMS spam detection, from preprocessing and model comparison to optimization and deployment.
+## 🧹 Data Preprocessing
+
+The SMS dataset was prepared before training the Machine Learning models.
+
+The preprocessing process included:
+
+- Checking the dataset structure and columns
+- Handling missing values
+- Removing duplicate records
+- Validating the Spam and Ham labels
+- Converting text to lowercase
+- Removing unnecessary punctuation and characters
+- Cleaning and normalizing text
+- Creating a stratified Train/Test split
+- Ensuring that data leakage was avoided
+
+---
+
+## 🧠 Feature Engineering
+
+Two feature extraction techniques were used to convert text messages into numerical representations.
+
+### CountVectorizer
+
+Represents text based on the frequency of words in each message.
+
+### TF-IDF Vectorizer
+
+Represents text based on both word frequency and the importance of words across the dataset.
+
+The vectorizers were fitted only on the training data to prevent data leakage.
+
+---
+
+## 🤖 Machine Learning Models
+
+The following models were trained and compared:
+
+- Multinomial Naive Bayes
+- Logistic Regression
+- LinearSVC
+
+Each model was tested using both **CountVectorizer** and **TF-IDF Vectorizer** to compare different feature configurations.
+
+---
+
+## 📊 Model Evaluation
+
+The models were evaluated using:
+
+- Accuracy
+- Precision
+- Recall
+- F1-Score
+- Classification Report
+- Confusion Matrix
+
+The project also includes analysis of:
+
+- False Positives
+- False Negatives
+- Misclassified messages
+
+This allowed the models to be compared using more than just accuracy.
+
+---
+
+## ⚙️ Optimization & Final Model
+
+Different hyperparameters and feature configurations were tested to improve model performance.
+
+The optimization process included experimenting with parameters such as:
+
+- `alpha`
+- `C`
+- `ngram_range`
+- `min_df`
+- `max_df`
+
+The optimized models were compared with the baseline models, and the best configuration was selected based on the evaluation metrics.
+
+---
+
+## 🏆 Final Model
+
+The final model was selected after evaluating and comparing all model configurations.
+
+### 🥇 CountVectorizer + Multinomial Naive Bayes
+
+### Final Performance
+
+| Metric | Score |
+|--------|-------|
+| Accuracy | **98.84%** |
+| Precision | **97.60%** |
+| Recall | **93.13%** |
+| F1-Score | **95.31%** |
+
+---
+
+## 🌐 Streamlit Application
+
+The final model was deployed using **Streamlit** to provide an interactive interface for spam detection.
+
+Users can:
+
+- Enter an SMS message
+- Predict whether the message is **Spam** or **Ham**
+- View the prediction result
+- View prediction probabilities or confidence when supported
+- View information about the model's performance
+
+### 🚨 Spam Prediction
+
+![Spam Prediction](outputs/spam_streamlit.png)
+
+### ✅ Ham Prediction
+
+![Ham Prediction](outputs/ham_streamlit.png)
+
+---
+
+## 🚀 How to Run the Project
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/MariamMohamed06/Optimized-spam-detector.git
+```
+
+### 2. Navigate to the project directory
+
+```bash
+cd Optimized-spam-detector
+```
+
+### 3. Install the required libraries
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Run the Streamlit application
+
+```bash
+python -m streamlit run app.py
+```
+
+---
+
+## 👥 Team Contributions
+
+This project was developed collaboratively, with each team member responsible for a specific part of the Machine Learning pipeline.
+
+| Team Member | Responsibilities |
+|---|---|
+| **Tukka Mohamed** | Data Preprocessing & Preparation + Logistic Regression Model |
+| **Mariam Mohamed** | Feature Engineering & Model Training |
+| **Ghada Mohamed** | Model Evaluation & Performance Analysis |
+| **Ahmed Hesham** | Model Optimization, Final Model Selection & Streamlit Deployment |
+
+### 👩‍💻 Tukka Mohamed
+
+- Data preprocessing and dataset preparation
+- Handling missing values and duplicates
+- Cleaning and validating SMS messages
+- Creating the Train/Test split
+- Implementing and training the Logistic Regression model
+
+### 👩‍💻 Mariam Mohamed
+
+- Implementing CountVectorizer and TF-IDF Vectorizer
+- Preparing features for model training
+- Training the Machine Learning models
+- Implementing Multinomial Naive Bayes and LinearSVC
+- Saving trained models and vectorizers
+
+### 👩‍💻 Ghada Mohamed
+
+- Evaluating all trained models
+- Calculating Accuracy, Precision, Recall, and F1-Score
+- Creating Confusion Matrices
+- Comparing model performance
+- Analyzing False Positives, False Negatives, and misclassified examples
+
+### 👨‍💻 Ahmed Hesham
+
+- Performing hyperparameter tuning and optimization
+- Experimenting with different feature configurations
+- Comparing baseline and optimized models
+- Selecting and validating the final model
+- Deploying the model using Streamlit
+
+---
+
+## 📁 Project Structure
+
+```text
+Optimized-spam-detector/
+│
+├── 📄 app.py
+├── 📄 README.md
+├── 📄 requirements.txt
+│
+├── 📂 data/
+│   ├── 📄 spam.csv
+│   └── 📄 cleaned_spam.csv
+│
+├── 📂 models/
+│   ├── 📄 count_vectorizer.pkl
+│   ├── 📄 tfidf_vectorizer.pkl
+│   ├── 📄 final_count_vectorizer.pkl
+│   ├── 📄 final_spam_model.pkl
+│   │
+│   ├── 📄 countvectorizer_multinomialnb.pkl
+│   ├── 📄 countvectorizer_logisticregression.pkl
+│   ├── 📄 countvectorizer_linearsvc.pkl
+│   │
+│   ├── 📄 tf_idf_multinomialnb.pkl
+│   ├── 📄 tf_idf_logisticregression.pkl
+│   └── 📄 tf_idf_linearsvc.pkl
+│
+├── 📂 notebooks/
+│   ├── 📓 Data Preprocessing.ipynb
+│   ├── 📓 Models.ipynb
+│   ├── 📓 Evaluation.ipynb
+│   └── 📓 Optimization.ipynb
+│
+├── 📂 outputs/
+│   ├── 🖼️ confusion_matrices.png
+│   ├── 🖼️ f1_ranking.png
+│   ├── 🖼️ metrics_comparison.png
+│   ├── 🖼️ spam_streamlit.png
+│   ├── 🖼️ ham_streamlit.png
+│   ├── 📄 misclassified_examples.csv
+│   └── 📄 model_comparison_results.csv
+│
+└── 📂 src/
+    ├── 📄 preprocess.py
+    ├── 📄 features.py
+    ├── 📄 train.py
+    └── 📄 evaluate.py
+```
+
+---
+
+## 📌 Conclusion
+
+This project demonstrates an end-to-end Machine Learning pipeline for SMS Spam Detection.
+
+From **data preprocessing** and **feature engineering** to **model training**, **evaluation**, **optimization**, and **Streamlit deployment**, the project demonstrates how Machine Learning can be used to build an effective and practical spam detection system.
