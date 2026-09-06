@@ -1,0 +1,71 @@
+Model,Error Type,True Label,Predicted,Message
+CountVectorizer + Multinomial NB,False Positive (ham -> spam),ham,spam,have you laid your airtel line to rest
+CountVectorizer + Multinomial NB,False Positive (ham -> spam),ham,spam,hey great deal farm tour 9am to 5pm 95 pax 50 deposit by 16 may
+CountVectorizer + Multinomial NB,False Positive (ham -> spam),ham,spam,waiting for your call
+CountVectorizer + Multinomial NB,False Negative (spam -> ham),spam,ham,babe u want me dont u baby im nasty and have a thing 4 filthyguys fancy a rude time with a sexy bitch how about we go slo n hard txt xxx slo 4msgs
+CountVectorizer + Multinomial NB,False Negative (spam -> ham),spam,ham,santa calling would your little ones like a call from santa xmas eve call 09058094583 to book your time
+CountVectorizer + Multinomial NB,False Negative (spam -> ham),spam,ham,sms ac sun0819 posts hello you seem cool
+CountVectorizer + Multinomial NB,False Negative (spam -> ham),spam,ham,hi its lucy hubby at meetins all day fri i will b alone at hotel u fancy cumin over pls leave msg 2day 09099726395 lucy x callså 1 minmobsmorelkpobox177hp51fl
+CountVectorizer + Multinomial NB,False Negative (spam -> ham),spam,ham,would you like to see my xxx pics they are so hot they were nearly banned in the uk
+CountVectorizer + Multinomial NB,False Negative (spam -> ham),spam,ham,ringtoneking 84484
+CountVectorizer + Multinomial NB,False Negative (spam -> ham),spam,ham,in the simpsons movie released in july 2007 name the band that died at the start of the film a green day b blue day c red day send a b or c
+CountVectorizer + Multinomial NB,False Negative (spam -> ham),spam,ham,missed call alert these numbers called but left no message 07008009200
+CountVectorizer + Multinomial NB,False Negative (spam -> ham),spam,ham,can u get 2 phone now i wanna chat 2 set up meet call me now on 09096102316 u can cum here 2moro luv jane xx callså 1 minmoremobsemspobox45po139wa
+CountVectorizer + Logistic Regression,False Positive (ham -> spam),ham,spam,sorry i missed your call can you please call back
+CountVectorizer + Logistic Regression,False Positive (ham -> spam),ham,spam,hi you just spoke to maneesha v we d like to know if you were satisfied with the experience reply toll free with yes or no
+CountVectorizer + Logistic Regression,False Negative (spam -> ham),spam,ham,dear voucher holder 2 claim your 1st class airport lounge passes when using your holiday voucher call 08704439680 when booking quote 1st class x 2
+CountVectorizer + Logistic Regression,False Negative (spam -> ham),spam,ham,recpt 1 3 you have ordered a ringtone your order is being processed
+CountVectorizer + Logistic Regression,False Negative (spam -> ham),spam,ham,100 dating service cal l 09064012103 box334sk38ch
+CountVectorizer + Logistic Regression,False Negative (spam -> ham),spam,ham,want explicit sex in 30 secs ring 02073162414 now costs 20p min
+CountVectorizer + Logistic Regression,False Negative (spam -> ham),spam,ham,babe u want me dont u baby im nasty and have a thing 4 filthyguys fancy a rude time with a sexy bitch how about we go slo n hard txt xxx slo 4msgs
+CountVectorizer + Logistic Regression,False Negative (spam -> ham),spam,ham,sms ac sun0819 posts hello you seem cool
+CountVectorizer + Logistic Regression,False Negative (spam -> ham),spam,ham,as a registered optin subscriber ur draw 4 å 100 gift voucher will be entered on receipt of a correct ans to 80062 whats no1 in the bbc charts
+CountVectorizer + Logistic Regression,False Negative (spam -> ham),spam,ham,hi its lucy hubby at meetins all day fri i will b alone at hotel u fancy cumin over pls leave msg 2day 09099726395 lucy x callså 1 minmobsmorelkpobox177hp51fl
+CountVectorizer + Logistic Regression,False Negative (spam -> ham),spam,ham,would you like to see my xxx pics they are so hot they were nearly banned in the uk
+CountVectorizer + Logistic Regression,False Negative (spam -> ham),spam,ham,ringtoneking 84484
+CountVectorizer + LinearSVC,False Positive (ham -> spam),ham,spam,storming msg wen u lift d phne u say hello do u knw wt is d real meaning of hello it s d name of a girl yes and u knw who is dat girl margaret hello she is d girlfrnd f grahmbell who invnted telphone moral one can 4get d name of a person
+CountVectorizer + LinearSVC,False Negative (spam -> ham),spam,ham,100 dating service cal l 09064012103 box334sk38ch
+CountVectorizer + LinearSVC,False Negative (spam -> ham),spam,ham,babe u want me dont u baby im nasty and have a thing 4 filthyguys fancy a rude time with a sexy bitch how about we go slo n hard txt xxx slo 4msgs
+CountVectorizer + LinearSVC,False Negative (spam -> ham),spam,ham,sms ac sun0819 posts hello you seem cool
+CountVectorizer + LinearSVC,False Negative (spam -> ham),spam,ham,hi its lucy hubby at meetins all day fri i will b alone at hotel u fancy cumin over pls leave msg 2day 09099726395 lucy x callså 1 minmobsmorelkpobox177hp51fl
+CountVectorizer + LinearSVC,False Negative (spam -> ham),spam,ham,would you like to see my xxx pics they are so hot they were nearly banned in the uk
+CountVectorizer + LinearSVC,False Negative (spam -> ham),spam,ham,ringtoneking 84484
+CountVectorizer + LinearSVC,False Negative (spam -> ham),spam,ham,bought one ringtone and now getting texts costing 3 pound offering more tones etc
+CountVectorizer + LinearSVC,False Negative (spam -> ham),spam,ham,in the simpsons movie released in july 2007 name the band that died at the start of the film a green day b blue day c red day send a b or c
+CountVectorizer + LinearSVC,False Negative (spam -> ham),spam,ham,check out choose your babe videos sms shsex netun fgkslpopw fgkslpo
+CountVectorizer + LinearSVC,False Negative (spam -> ham),spam,ham,you will recieve your tone within the next 24hrs for terms and conditions please see channel u teletext pg 750
+TF-IDF + Multinomial NB,False Negative (spam -> ham),spam,ham,dear voucher holder 2 claim your 1st class airport lounge passes when using your holiday voucher call 08704439680 when booking quote 1st class x 2
+TF-IDF + Multinomial NB,False Negative (spam -> ham),spam,ham,you are being contacted by our dating service by someone you know to find out who it is call from a land line 09050000928 pobox45w2tg150p
+TF-IDF + Multinomial NB,False Negative (spam -> ham),spam,ham,recpt 1 3 you have ordered a ringtone your order is being processed
+TF-IDF + Multinomial NB,False Negative (spam -> ham),spam,ham,u have a secret admirer who is looking 2 make contact with u find out who they r reveal who thinks ur so special call on 09058094599
+TF-IDF + Multinomial NB,False Negative (spam -> ham),spam,ham,guess what somebody you know secretly fancies you wanna find out who it is give us a call on 09065394973 from landline datebox1282essexcm61xn 150p min 18
+TF-IDF + Multinomial NB,False Negative (spam -> ham),spam,ham,free msg sorry a service you ordered from 81303 could not be delivered as you do not have sufficient credit please top up to receive the service
+TF-IDF + Multinomial NB,False Negative (spam -> ham),spam,ham,you are being contacted by our dating service by someone you know to find out who it is call from a land line 09050000878 pobox45w2tg150p
+TF-IDF + Multinomial NB,False Negative (spam -> ham),spam,ham,babe u want me dont u baby im nasty and have a thing 4 filthyguys fancy a rude time with a sexy bitch how about we go slo n hard txt xxx slo 4msgs
+TF-IDF + Multinomial NB,False Negative (spam -> ham),spam,ham,santa calling would your little ones like a call from santa xmas eve call 09058094583 to book your time
+TF-IDF + Multinomial NB,False Negative (spam -> ham),spam,ham,sms ac sun0819 posts hello you seem cool
+TF-IDF + Logistic Regression,False Positive (ham -> spam),ham,spam,waiting for your call
+TF-IDF + Logistic Regression,False Negative (spam -> ham),spam,ham,dear voucher holder 2 claim your 1st class airport lounge passes when using your holiday voucher call 08704439680 when booking quote 1st class x 2
+TF-IDF + Logistic Regression,False Negative (spam -> ham),spam,ham,camera you are awarded a sipix digital camera call 09061221066 fromm landline delivery within 28 days
+TF-IDF + Logistic Regression,False Negative (spam -> ham),spam,ham,recpt 1 3 you have ordered a ringtone your order is being processed
+TF-IDF + Logistic Regression,False Negative (spam -> ham),spam,ham,well done your 4 costa del sol holiday or å 5000 await collection call 09050090044 now toclaim sae tcs pobox334 stockport sk38xh costå 1 50 pm max10mins
+TF-IDF + Logistic Regression,False Negative (spam -> ham),spam,ham,free msg sorry a service you ordered from 81303 could not be delivered as you do not have sufficient credit please top up to receive the service
+TF-IDF + Logistic Regression,False Negative (spam -> ham),spam,ham,100 dating service cal l 09064012103 box334sk38ch
+TF-IDF + Logistic Regression,False Negative (spam -> ham),spam,ham,want explicit sex in 30 secs ring 02073162414 now costs 20p min
+TF-IDF + Logistic Regression,False Negative (spam -> ham),spam,ham,babe u want me dont u baby im nasty and have a thing 4 filthyguys fancy a rude time with a sexy bitch how about we go slo n hard txt xxx slo 4msgs
+TF-IDF + Logistic Regression,False Negative (spam -> ham),spam,ham,congrats 1 year special cinema pass for 2 is yours call 09061209465 now c suprman v matrix3 starwars3 etc all 4 free bx420 ip4 5we 150pm dont miss out
+TF-IDF + Logistic Regression,False Negative (spam -> ham),spam,ham,sms ac sun0819 posts hello you seem cool
+TF-IDF + LinearSVC,False Positive (ham -> spam),ham,spam,sorry i missed your call can you please call back
+TF-IDF + LinearSVC,False Positive (ham -> spam),ham,spam,have you heard from this week
+TF-IDF + LinearSVC,False Positive (ham -> spam),ham,spam,ok ur typical reply
+TF-IDF + LinearSVC,False Positive (ham -> spam),ham,spam,waiting for your call
+TF-IDF + LinearSVC,False Negative (spam -> ham),spam,ham,dear voucher holder 2 claim your 1st class airport lounge passes when using your holiday voucher call 08704439680 when booking quote 1st class x 2
+TF-IDF + LinearSVC,False Negative (spam -> ham),spam,ham,babe u want me dont u baby im nasty and have a thing 4 filthyguys fancy a rude time with a sexy bitch how about we go slo n hard txt xxx slo 4msgs
+TF-IDF + LinearSVC,False Negative (spam -> ham),spam,ham,sms ac sun0819 posts hello you seem cool
+TF-IDF + LinearSVC,False Negative (spam -> ham),spam,ham,hi its lucy hubby at meetins all day fri i will b alone at hotel u fancy cumin over pls leave msg 2day 09099726395 lucy x callså 1 minmobsmorelkpobox177hp51fl
+TF-IDF + LinearSVC,False Negative (spam -> ham),spam,ham,would you like to see my xxx pics they are so hot they were nearly banned in the uk
+TF-IDF + LinearSVC,False Negative (spam -> ham),spam,ham,ringtoneking 84484
+TF-IDF + LinearSVC,False Negative (spam -> ham),spam,ham,bought one ringtone and now getting texts costing 3 pound offering more tones etc
+TF-IDF + LinearSVC,False Negative (spam -> ham),spam,ham,in the simpsons movie released in july 2007 name the band that died at the start of the film a green day b blue day c red day send a b or c
+TF-IDF + LinearSVC,False Negative (spam -> ham),spam,ham,check out choose your babe videos sms shsex netun fgkslpopw fgkslpo
+TF-IDF + LinearSVC,False Negative (spam -> ham),spam,ham,you will recieve your tone within the next 24hrs for terms and conditions please see channel u teletext pg 750

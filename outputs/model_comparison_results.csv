@@ -1,0 +1,7 @@
+Model,Accuracy,Precision (Spam),Recall (Spam),F1-score (Spam)
+CountVectorizer + Multinomial NB,0.9884,0.976,0.9313,0.9531
+CountVectorizer + LinearSVC,0.9874,0.9917,0.9084,0.9482
+TF-IDF + LinearSVC,0.9855,0.9677,0.916,0.9412
+CountVectorizer + Logistic Regression,0.9816,0.9828,0.8702,0.9231
+TF-IDF + Multinomial NB,0.972,1.0,0.7786,0.8755
+TF-IDF + Logistic Regression,0.971,0.9903,0.7786,0.8718
